@@ -61,7 +61,7 @@ REST_FRAMEWORK = {
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
-    'django.contrib.auth.middleware.SessionAuthenticacionMiddleware',
+#     'django.contrib.auth.middleware.SessionAuthenticacionMiddleware',
     'django.middleware.common.CommonMiddleware',
 #     'corsheaders.middleware.CorsPostCsrfMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
@@ -88,12 +88,12 @@ CORS_ALLOW_HEADERS = (
 )
 
 # CORS_ALLOW_CREDENTIALS = True
-CORS_ORIGIN_ALLOW_ALL=False
+CORS_ORIGIN_ALLOW_ALL = True
 
-CORS_ORIGIN_WHITELIST = (
-    'http://127.0.0.1:4200',
-    'https://ragister-api.herokuapp.com',
-)
+# CORS_ORIGIN_WHITELIST = (
+#     'http://127.0.0.1:4200',
+#     'https://ragister-api.herokuapp.com',
+# )
 
 CORS_ALLOW_METHODS = (
     'DELETE',
