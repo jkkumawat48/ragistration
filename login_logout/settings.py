@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-onpruuy*_9hn^e5u#r(t_yahx5r-i#p$w@3=h9n@!=)v3x932w
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ["*"]
+ALLOWED_HOSTS = ['http://localhost:4200']
 
 
 # Application definition
@@ -62,7 +62,7 @@ MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
-    'django.middleware.csrf.CsrfViewMiddleware',
+#     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
@@ -74,11 +74,11 @@ MIDDLEWARE = [
 CORS_ALLOW_CREDENTIALS = True
 CORS_ORIGIN_ALLOW_ALL=True
 
-CORS_ALLOWED_ORIGIN_REGEXES = [
-    'http://localhost:3030',
-    'http://localhost:4200',
-    'https://ragister-api.herokuapp.com',
-]
+# CORS_ALLOWED_ORIGIN_REGEXES = [
+#     'http://localhost:3030',
+#     'http://localhost:4200',
+#     'https://ragister-api.herokuapp.com',
+# ]
 
 
 
@@ -98,10 +98,10 @@ CORS_ALLOW_HEADERS = (
 
 
 # CORS_ORIGIN_WHITELIST = (
-#     'http://localhost:8000',
-#     'http://127.0.0.1:9000',
-#     'http://localhost:3000',
-#     'http://127.0.0.1:3000',
+# #     'http://localhost:8000',
+# #     'http://127.0.0.1:9000',
+# #     'http://localhost:3000',
+# #     'http://127.0.0.1:3000',
 #     'http://127.0.0.1:4200',
 #     'https://ragister-api.herokuapp.com',
 #     # 'https://ilearnplacedev.netlify.app',
