@@ -96,6 +96,7 @@ CORS_ORIGIN_WHITELIST = (
     'http://localhost:3000',
     'http://127.0.0.1:3000',
     'http://127.0.0.1:4200',
+    'https://ragister-api.herokuapp.com',
     # 'https://ilearnplacedev.netlify.app',
     # 'https://ilearnplace.netlify.app',
     # 'https://ilearnplace.com',
