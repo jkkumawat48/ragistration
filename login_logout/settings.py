@@ -71,8 +71,14 @@ MIDDLEWARE = [
     
 ]
 
-#CORS_ALLOW_CREDENTIALS = True
+CORS_ALLOW_CREDENTIALS = True
 CORS_ORIGIN_ALLOW_ALL=True
+
+CORS_ALLOWED_ORIGIN_REGEXES = [
+    'http://localhost:3030',
+    'http://localhost:4200',
+    'https://ragister-api.herokuapp.com',
+]
 
 
 
